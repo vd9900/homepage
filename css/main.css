@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  border: none;
 }
 :root {
   --padding: 0.5rem;
@@ -11,8 +12,12 @@
 .navbar {
   background-color: #ffffff;
   border-bottom: 1px #2baf38 solid;
-  position: fixed;
   width: 100%;
+  top: 0;
+  position: sticky;
+  z-index: 50;
+}
+.fixed-navbar {
 }
 .container {
   width: 85%;
@@ -56,9 +61,89 @@
 }
 
 .main-section {
-  height: 640px;
+  height: 500px;
   background-image: url(https://pristinegreencleaning.com/assets/images/ny-carpet-cleaning.jpg);
   background-repeat: no-repeat;
   /* background-position: center; */
   background-size: cover;
+  padding: 0 6rem;
+}
+.main-heading-section {
+  /* widthś: 43%; */
+}
+.heading-1 {
+  color: #4078bc;
+  font-size: 3.5rem;
+}
+.heading-2 {
+  font-size: 1.8rem;
+  padding: 0.4rem 0;
+  color: #ffffff;
+  filter: drop-shadow(0 0 4px #666);
+}
+.booknow-section {
+  height: 3.2rem;
+  gap: 0.4rem;
+  margin: 2rem 0;
+}
+
+.book-now_input {
+  outline: none;
+  width: 75%;
+  height: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+.book-now_btn {
+  background-color: #2baf38;
+  width: 35%;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.toggle-menu {
+  width: 100vw;
+  height: calc(100vh - 78px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 40;
+  background-color: #4873b7;
+}
+.toggle-menu > div:not(:last-child) {
+  border-bottom: 1px solid rgb(255, 250, 250);
+}
+
+.toggle-menu > div {
+  font-weight: 600;
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 1.6rem;
+}
+
+/* Media query */
+
+@media screen and (max-width: 920px) {
+  html {
+    font-size: 14px;
+  }
+  .container {
+    width: 95%;
+  }
+  .navbar-phone_section {
+    gap: 1rem;
+  }
+  .navbar-section-2 {
+    display: none;
+  }
+  .myphone {
+    display: none;
+  }
+  .toggle-menu {
+    display: block !important;
+  }
+  .toggle-menu-btn {
+    display: block !important;
+  }
 }

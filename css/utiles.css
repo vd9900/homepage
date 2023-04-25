@@ -8,3 +8,18 @@
 .flex-col {
   flex-direction: column;
 }
+.item-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.gap-1 {
+  gap: 0.8rem;
+}
+.gap-4 {
+  gap: 1.8rem;
+}
+.hidden {
+  display: none;
+}

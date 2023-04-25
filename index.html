@@ -10,56 +10,152 @@
   </head>
   <body>
     <nav class="navbar">
-      <div class="container flex flex-col">
-        <!-- logo & phone -->
-        <div class="navbar-section-1">
-          <!-- Logo section -->
-          <div>
-            <!-- logo img -->
-            <span>
-              <img
-                class="main-logo lazy"
-                alt="PrisineGreen"
-                height="60"
-                width="270"
-                src="https://pristinegreencleaning.com/assets/logo/PGUpholsteryAndCarpetCleaning.png"
-                style
-              />
-            </span>
+      <div class="fixed-navbar">
+        <div class="container flex flex-col">
+          <!-- logo & phone -->
+          <div class="navbar-section-1">
+            <!-- Logo section -->
+            <div class="">
+              <!-- logo img -->
+              <span>
+                <img
+                  class="main-logo lazy"
+                  alt="PrisineGreen"
+                  height="60"
+                  width="270"
+                  src="https://pristinegreencleaning.com/assets/logo/PGUpholsteryAndCarpetCleaning.png"
+                  style
+                />
+              </span>
+            </div>
+            <!-- phone-section -->
+            <div class="navbar-phone_section flex">
+              <div class="flex item-center gap-1">
+                <img
+                  width="35"
+                  height="35"
+                  alt="call-us"
+                  class="lazy"
+                  src="https://pristinegreencleaning.com/assets/icons/call.png"
+                  style
+                />
+                <a
+                  class="myphone"
+                  href="tel:347-871-6530"
+                  style="color: #76d381; font-size: 28px !important"
+                >
+                  347-871-6530
+                </a>
+              </div>
+              <!-- toggloe for small device -->
+              <div class="hidden toggle-menu-btn">
+                <button id="breadcrump-btn">
+                  <img
+                    width="35"
+                    height="35"
+                    alt="call-us"
+                    class="lazy"
+                    src="https://cdn4.iconfinder.com/data/icons/navigation-40/24/hamburger-menu-512.png"
+                    style
+                  />
+                </button>
+              </div>
+            </div>
           </div>
-          <!-- phone-section -->
-          <div class="navbar-phone_section flex">
-            <img
-              width="35"
-              height="35"
-              alt="call-us"
-              class="lazy"
-              src="https://pristinegreencleaning.com/assets/icons/call.png"
-              style
-            />
-            <a
-              class="myphone"
-              href="tel:347-871-6530"
-              style="color: #76d381; font-size: 28px !important"
-            >
-              347-871-6530
-            </a>
+          <div class="navbar-section-2">
+            <!-- Links -->
+            <ul class="nav-links flex">
+              <li class="link">Cleaning Services</li>
+              <li class="link">Request a Quote</li>
+              <li class="link">Service Areas</li>
+              <li class="link">Gallery</li>
+              <li class="link">Contact Us</li>
+            </ul>
           </div>
-        </div>
-        <div class="navbar-section-2">
-          <!-- Links -->
-          <ul class="nav-links flex">
-            <li class="link">Cleaning Services</li>
-            <li class="link">Request a Quote</li>
-            <li class="link">Service Areas</li>
-            <li class="link">Gallery</li>
-            <li class="link">Contact Us</li>
-          </ul>
         </div>
       </div>
     </nav>
-    <main class="main-section console">
-      <div class=""></div>
+    <!-- Toggle menu section (only small devices) -->
+    <div class="toggle-menu hidden">
+      <!-- options -->
+      <div class="flex justify-between">
+        <span> Cleaning Services </span>
+        <span>to</span>
+      </div>
+      <div>Request a Quote</div>
+      <div>Service Areas</div>
+      <div>Gallery</div>
+      <div>Conatct Us</div>
+      <div>
+        <div class="flex flex-col gap-1">
+          <p>Our socials</p>
+          <!-- social links -->
+          <div class="flex gap-4">
+            <a
+              href="https://www.facebook.com/PristineGreen-Upholstery-and-Carpet-Cleaning-380402999024630/?__tn__=%2Cg/"
+              target="_blank"
+              rel="noreferrer"
+              ><img
+                rel="canonical"
+                class="lazy"
+                alt="twitter"
+                width="32px"
+                height="32px"
+                src="https://pristinegreencleaning.com/assets/images/5296516_tweet_twitter_twitter logo_icon.svg"
+                style
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/PristineGreen-Upholstery-and-Carpet-Cleaning-380402999024630/?__tn__=%2Cg/"
+              target="_blank"
+              rel="noreferrer"
+              ><img
+                rel="canonical"
+                class="lazy"
+                alt="twitter"
+                width="32px"
+                height="32px"
+                src="https://pristinegreencleaning.com/assets/images/5296516_tweet_twitter_twitter logo_icon.svg"
+                style
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/PristineGreen-Upholstery-and-Carpet-Cleaning-380402999024630/?__tn__=%2Cg/"
+              target="_blank"
+              rel="noreferrer"
+              ><img
+                rel="canonical"
+                class="lazy"
+                alt="twitter"
+                width="32px"
+                height="32px"
+                src="https://pristinegreencleaning.com/assets/images/5296516_tweet_twitter_twitter logo_icon.svg"
+                style
+              />
+            </a>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+
+    <main class="main-section item-center flex">
+      <div class="main-heading-section">
+        <!-- heading section -->
+        <div>
+          <h1 class="heading-1">
+            Non-Toxic <br />
+            Carpet and Upholstery <br />
+            Cleaning
+          </h1>
+          <h3 class="heading-2">Top Carpet Cleaner Service in NYC</h3>
+        </div>
+        <!-- Book now seciton -->
+        <div class="booknow-section flex">
+          <input type="text" class="book-now_input" />
+          <button class="book-now_btn">Book now</button>
+        </div>
+      </div>
     </main>
     <script src="./js/main.js"></script>
   </body>
