@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --padding: 0.5rem;
+}
+
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px #2baf38 solid;
+  position: fixed;
+  width: 100%;
+}
+.container {
+  width: 85%;
+  padding: var(--padding);
+  margin: 0 auto;
+  gap: 0.8rem;
+}
+.phone-number {
+  color: green;
+}
+
+.navbar-section-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-phone_section {
+  align-items: center;
+  gap: 5px;
+}
+.myphone {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+}
+
+.navbar-section-2 {
+  padding: 0.5rem 0;
+}
+.nav-links {
+  margin: "0 0 0 auto";
+  list-style: none;
+  justify-content: end;
+  gap: 2.5rem;
+}
+.link {
+  color: #0087ca;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.main-section {
+  height: 640px;
+  background-image: url(https://pristinegreencleaning.com/assets/images/ny-carpet-cleaning.jpg);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+}
