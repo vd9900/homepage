@@ -7,6 +7,10 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/utiles.css" />
+    <script
+      src="https://kit.fontawesome.com/b6e54b3865.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav class="navbar">
@@ -49,15 +53,8 @@
               </div>
               <!-- toggloe for small device -->
               <div class="hidden toggle-menu-btn">
-                <button id="breadcrump-btn">
-                  <img
-                    width="35"
-                    height="35"
-                    alt="call-us"
-                    class="lazy"
-                    src="https://cdn4.iconfinder.com/data/icons/navigation-40/24/hamburger-menu-512.png"
-                    style
-                  />
+                <button id="breadcrump-btn" class="curoser-pointer">
+                  <i class="fa-solid fa-bars"></i>
                 </button>
               </div>
             </div>
@@ -72,15 +69,31 @@
               <li class="link">Contact Us</li>
             </ul>
           </div>
+          <!-- show on hover (cleaning services ) -->
+          <div></div>
         </div>
+        <div class="clean-serivces-hover hidden"></div>
       </div>
     </nav>
     <!-- Toggle menu section (only small devices) -->
-    <div class="toggle-menu hidden">
+    <div id="toggle-menu-container" class="toggle-menu hidden">
       <!-- options -->
-      <div class="flex justify-between">
+      <div class="flex justify-between item-center">
         <span> Cleaning Services </span>
-        <span>to</span>
+        <i class="fa-solid fa-sort-down curoser-pointer" id="sort-down-btn"></i>
+      </div>
+      <!-- expand cleaning services -->
+      <div id="clean-serivces-expand" class="clean-service-section hidden">
+        <div>Carpet Cleaning</div>
+        <div>Upholstery Cleaning</div>
+        <div>Area Rug Cleaning</div>
+        <div>Matterss Cleaning</div>
+        <div>Oriental Rug Cleaning</div>
+        <div>Green Cleaning</div>
+        <div>Commerical Cleaning</div>
+        <div>Couch Cleaning</div>
+        <div>Auto Interior Cleaning</div>
+        <div>Pet Stains And Odors Cleaning</div>
       </div>
       <div>Request a Quote</div>
       <div>Service Areas</div>

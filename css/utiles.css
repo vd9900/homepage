@@ -23,3 +23,6 @@
 .hidden {
   display: none;
 }
+.curoser-pointer {
+  cursor: pointer;
+}
