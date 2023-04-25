@@ -275,7 +275,7 @@ a {
   }
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 940px) {
   html {
     font-size: 14px;
   }
@@ -295,9 +295,17 @@ a {
   .toggle-menu-btn {
     display: block !important;
   }
+  .footer-1-container > div {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 500px) {
+  .footer-1-container > div {
+    width: 100% !important;
+    text-align: center;
+  }
+
   .footer-1-container__imgs {
     margin: 0 auto;
   }

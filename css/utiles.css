@@ -11,9 +11,6 @@
 .item-center {
   align-items: center;
 }
-.justify-center {
- 
-}
 .justify-between {
   justify-content: space-between;
 }
@@ -21,8 +18,14 @@
 .gap-1 {
   gap: 0.9rem;
 }
+.gap-2 {
+  gap: 1rem;
+}
 .gap-4 {
   gap: 1.8rem;
+}
+.gap-6 {
+  gap: 6rem;
 }
 .hidden {
   display: none;
@@ -34,6 +37,7 @@
 .footer-heading {
   color: #fff;
   font-size: 1.4rem;
+  padding: 0.7rem 0.7rem 0.7rem 0;
   border-bottom: 2px solid tomato;
 }
 
@@ -54,4 +58,84 @@
 .footer-1-container__Service-links > li :hover {
   color: #2baf38;
   /* padding: 100px; */
+}
+.slider-section {
+  position: relative;
+}
+.slider-container {
+  padding: 4rem;
+
+  overflow: hidden;
+}
+.slider-container-title {
+  color: #0087ca;
+  font-family: " sans-serif";
+  font-size: 1.5rem;
+  text-align: center;
+}
+.slider-container-cards {
+  padding: 2rem 1rem;
+}
+.slider-container-card {
+  /* width: %; */
+  border: 1px solid #eee5e5;
+  padding: 1rem;
+  flex: 1;
+  margin: 0 10px;
+  border-radius: 6px;
+}
+.slider-container-card-image {
+  text-align: center;
+  width: 100%;
+}
+.slider-container-card-image > img {
+  border-radius: 15px;
+  height: 350px;
+  width: 350px;
+}
+.slider-container-card-detail :first-child {
+  text-align: center;
+  font-weight: 700;
+  color: #000000;
+}
+.slider-container-card-detail:last-child {
+  font-weight: 500;
+  color: #4e4a4a;
+}
+.slider-container-card-detail-learnmore {
+  color: #0092d8;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+.slider-container-card-detail-learnmore:hover {
+  text-decoration: underline;
+}
+.slider-container-card-arrow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  bottom: 50%;
+  padding: 0 2rem;
+}
+.next-button {
+  background-image: url("https://pristinegreencleaning.com/assets/icons/icn--more-svg2.svg");
+  width: 2.813rem !important;
+  height: 2.813rem !important;
+  background-repeat: no-repeat;
+  background-color: #4078bc;
+  background-size: auto 75%;
+  background-position: center;
+  border-radius: 8px 0 0 8px;
+}
+.prev-button {
+  background-image: url("https://pristinegreencleaning.com/assets/icons/icn--more-svg2.svg");
+  width: 2.813rem !important;
+  height: 2.813rem !important;
+  background-repeat: no-repeat;
+  background-color: #4078bc;
+  background-size: auto 75%;
+  background-position: center;
+  border-radius: 8px 0px 0px 8px;
+  transform: scale(-1);
 }
