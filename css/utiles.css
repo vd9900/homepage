@@ -11,6 +11,9 @@
 .item-center {
   align-items: center;
 }
+.justify-center {
+  justify-content: center;
+}
 .justify-between {
   justify-content: space-between;
 }
@@ -74,14 +77,15 @@
   text-align: center;
 }
 .slider-container-cards {
-  padding: 2rem 1rem;
+  overflow: hidden;
+  padding: 2rem 1.5rem;
 }
 .slider-container-card {
   /* width: %; */
   border: 1px solid #eee5e5;
   padding: 1rem;
   flex: 1;
-  margin: 0 10px;
+  /* margin: 0 10px; */
   border-radius: 6px;
 }
 .slider-container-card-image {

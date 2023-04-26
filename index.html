@@ -62,65 +62,70 @@
           <div class="navbar-section-2">
             <!-- Links -->
             <ul class="nav-links flex">
-              <li class="link clean-link">Cleaning Services</li>
+              <li class="link clean-link">
+                <span> Cleaning Services </span>
+                <!-- show on hover (cleaning services ) -->
+                <div class="clean-serivces-hover flex flex-col justify-center ">
+                  <div class="flex justify-between">
+                    <div>
+                      <h2>Cleaning Services</h2>
+                      <div
+                        class="flex cleaning-services-hover-sections justify-between"
+                      >
+                        <div
+                          class="flex flex-col cleaning-services-hover-section"
+                        >
+                          <p class="">
+                            <a href="#">Carpet Cleaning</a>
+                          </p>
+                          <p>
+                            <a href="#">Upholstery Cleaning</a>
+                          </p>
+                          <p>
+                            <a href="#">Area Rug Cleaning</a>
+                          </p>
+                          <p>
+                            <a href="#">Matterss Cleaning</a>
+                          </p>
+                          <p>
+                            <a href="#">Oriental Rug Cleaning</a>
+                          </p>
+                        </div>
+                        <div class="cleaning-services-hover-section">
+                          <p>
+                            <a href="#">Green Cleaning</a>
+                          </p>
+                          <p>
+                            <a href="#">Commerical Cleaning</a>
+                          </p>
+                          <p>
+                            <a href="#">Couch Cleaning</a>
+                          </p>
+                          <p>
+                            <a href="#">Auto Interior Cleaning</a>
+                          </p>
+                          <p>
+                            <a href="#">Pet Stains And Odors Cleaning</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- img section -->
+                    <div>
+                      <img
+                        class="ddr-image img img-fluid"
+                        src="https://pristinegreencleaning.com/assets/icons/Carpet-Upholstery-Cleaning-Google-Yelp-Rating.png"
+                        alt="Carpet Upholstery Cleaning Google Yelp Rating"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
               <li class="link">Request a Quote</li>
               <li class="link">Service Areas</li>
               <li class="link">Gallery</li>
               <li class="link">Contact Us</li>
             </ul>
-          </div>
-          <!-- show on hover (cleaning services ) -->
-          <div></div>
-        </div>
-      </div>
-      <div class="clean-serivces-hover">
-        <div class="flex justify-between">
-          <div>
-            <h2>Cleaning Services</h2>
-            <div class="flex cleaning-services-hover-sections justify-between">
-              <div class="flex flex-col cleaning-services-hover-section">
-                <p class="">
-                  <a href="#">Carpet Cleaning</a>
-                </p>
-                <p>
-                  <a href="#">Upholstery Cleaning</a>
-                </p>
-                <p>
-                  <a href="#">Area Rug Cleaning</a>
-                </p>
-                <p>
-                  <a href="#">Matterss Cleaning</a>
-                </p>
-                <p>
-                  <a href="#">Oriental Rug Cleaning</a>
-                </p>
-              </div>
-              <div class="cleaning-services-hover-section">
-                <p>
-                  <a href="#">Green Cleaning</a>
-                </p>
-                <p>
-                  <a href="#">Commerical Cleaning</a>
-                </p>
-                <p>
-                  <a href="#">Couch Cleaning</a>
-                </p>
-                <p>
-                  <a href="#">Auto Interior Cleaning</a>
-                </p>
-                <p>
-                  <a href="#">Pet Stains And Odors Cleaning</a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- img section -->
-          <div>
-            <img
-              class="ddr-image img img-fluid"
-              src="https://pristinegreencleaning.com/assets/icons/Carpet-Upholstery-Cleaning-Google-Yelp-Rating.png"
-              alt="Carpet Upholstery Cleaning Google Yelp Rating"
-            />
           </div>
         </div>
       </div>
@@ -130,7 +135,14 @@
       <!-- options -->
       <div class="flex justify-between item-center">
         <span> Cleaning Services </span>
-        <i class="fa-solid fa-sort-down curoser-pointer" id="sort-down-btn"></i>
+        <button
+          class="toggle-menu-contianer-sortBtn flex item-center justify-center"
+        >
+          <i
+            class="fa-solid fa-sort-down curoser-pointer"
+            id="sort-down-btn"
+          ></i>
+        </button>
       </div>
       <!-- expand cleaning services -->
       <div id="clean-serivces-expand" class="clean-service-section hidden">
@@ -161,10 +173,10 @@
               ><img
                 rel="canonical"
                 class="lazy"
-                alt="twitter"
+                alt="facebook"
                 width="32px"
                 height="32px"
-                src="https://pristinegreencleaning.com/assets/images/5296516_tweet_twitter_twitter logo_icon.svg"
+                src="https://pristinegreencleaning.com/assets/images/5365678_fb_facebook_facebook logo_icon.png"
                 style
               />
             </a>
@@ -172,7 +184,8 @@
               href="https://www.facebook.com/PristineGreen-Upholstery-and-Carpet-Cleaning-380402999024630/?__tn__=%2Cg/"
               target="_blank"
               rel="noreferrer"
-              ><img
+            >
+              <img
                 rel="canonical"
                 class="lazy"
                 alt="twitter"
@@ -186,13 +199,14 @@
               href="https://www.facebook.com/PristineGreen-Upholstery-and-Carpet-Cleaning-380402999024630/?__tn__=%2Cg/"
               target="_blank"
               rel="noreferrer"
-              ><img
+            >
+              <img
                 rel="canonical"
                 class="lazy"
-                alt="twitter"
+                alt="instagram"
                 width="32px"
                 height="32px"
-                src="https://pristinegreencleaning.com/assets/images/5296516_tweet_twitter_twitter logo_icon.svg"
+                src="https://pristinegreencleaning.com/assets/images/5296765_camera_instagram_instagram logo_icon.webp"
                 style
               />
             </a>
@@ -225,246 +239,248 @@
     <section class="slider-section">
       <div class="slider-container">
         <h3 class="slider-container-title">What We Do Best</h3>
-        <div class="slider-container-cards flex justify-between gap-6">
+        <div class="slider-container-cards">
           <!-- cards -->
-          <div class="slider-container-card">
-            <!-- img -->
-            <div class="slider-container-card-image">
-              <img
-                class="lazy"
-                alt="Baby sitting on clean carpet. "
-                title="Carpet-Cleaning-Baby-on-Carpet"
-                src="https://pristinegreencleaning.com/assets/images/service/carpet-cleaner-nyc.webp"
-                style
-              />
+          <div class="slider-container-warpper flex justify-between gap-6">
+            <div class="slider-container-card">
+              <!-- img -->
+              <div class="slider-container-card-image">
+                <img
+                  class="lazy"
+                  alt="Baby sitting on clean carpet. "
+                  title="Carpet-Cleaning-Baby-on-Carpet"
+                  src="https://pristinegreencleaning.com/assets/images/service/carpet-cleaner-nyc.webp"
+                  style
+                />
+              </div>
+              <!-- card details -->
+              <div class="slider-container-card-detail flex flex-col">
+                <p>Cartpet Cleaning</p>
+                <p>
+                  As one of the top carpet cleaner services in NYC, we
+                  specialize resolving all types of issues including pet stains,
+                  pet odors, urine stains, food stains, wine stains and more!
+                </p>
+                <a href="#" class="slider-container-card-detail-learnmore"
+                  >Learn More Carpet Cleaning</a
+                >
+              </div>
             </div>
-            <!-- card details -->
-            <div class="slider-container-card-detail flex flex-col">
-              <p>Cartpet Cleaning</p>
-              <p>
-                As one of the top carpet cleaner services in NYC, we specialize
-                resolving all types of issues including pet stains, pet odors,
-                urine stains, food stains, wine stains and more!
-              </p>
-              <a href="#" class="slider-container-card-detail-learnmore"
-                >Learn More Carpet Cleaning</a
-              >
+            <div class="slider-container-card">
+              <!-- img -->
+              <div class="slider-container-card-image">
+                <img
+                  class="lazy"
+                  alt="Baby sitting on clean carpet. "
+                  title="Carpet-Cleaning-Baby-on-Carpet"
+                  src="https://pristinegreencleaning.com/assets/images/service/carpet-cleaner-nyc.webp"
+                  style
+                />
+              </div>
+              <!-- card details -->
+              <div class="slider-container-card-detail flex flex-col">
+                <p>Cartpet Cleaning</p>
+                <p>
+                  As one of the top carpet cleaner services in NYC, we
+                  specialize resolving all types of issues including pet stains,
+                  pet odors, urine stains, food stains, wine stains and more!
+                </p>
+                <a href="#" class="slider-container-card-detail-learnmore"
+                  >Learn More Carpet Cleaning</a
+                >
+              </div>
             </div>
-          </div>
-          <div class="slider-container-card">
-            <!-- img -->
-            <div class="slider-container-card-image">
-              <img
-                class="lazy"
-                alt="Baby sitting on clean carpet. "
-                title="Carpet-Cleaning-Baby-on-Carpet"
-                src="https://pristinegreencleaning.com/assets/images/service/carpet-cleaner-nyc.webp"
-                style
-              />
+            <div class="slider-container-card">
+              <!-- img -->
+              <div class="slider-container-card-image">
+                <img
+                  class="lazy"
+                  alt="Baby sitting on clean carpet. "
+                  title="Carpet-Cleaning-Baby-on-Carpet"
+                  src="https://pristinegreencleaning.com/assets/images/service/carpet-cleaner-nyc.webp"
+                  style
+                />
+              </div>
+              <!-- card details -->
+              <div class="slider-container-card-detail flex flex-col">
+                <p>Cartpet Cleaning</p>
+                <p>
+                  As one of the top carpet cleaner services in NYC, we
+                  specialize resolving all types of issues including pet stains,
+                  pet odors, urine stains, food stains, wine stains and more!
+                </p>
+                <a href="#" class="slider-container-card-detail-learnmore"
+                  >Learn More Carpet Cleaning</a
+                >
+              </div>
             </div>
-            <!-- card details -->
-            <div class="slider-container-card-detail flex flex-col">
-              <p>Cartpet Cleaning</p>
-              <p>
-                As one of the top carpet cleaner services in NYC, we specialize
-                resolving all types of issues including pet stains, pet odors,
-                urine stains, food stains, wine stains and more!
-              </p>
-              <a href="#" class="slider-container-card-detail-learnmore"
-                >Learn More Carpet Cleaning</a
-              >
+            <div class="slider-container-card">
+              <!-- img -->
+              <div class="slider-container-card-image">
+                <img
+                  class="lazy"
+                  alt="Baby sitting on clean carpet. "
+                  title="Carpet-Cleaning-Baby-on-Carpet"
+                  src="https://pristinegreencleaning.com/assets/images/service/carpet-cleaner-nyc.webp"
+                  style
+                />
+              </div>
+              <!-- card details -->
+              <div class="slider-container-card-detail flex flex-col">
+                <p>Cartpet Cleaning</p>
+                <p>
+                  As one of the top carpet cleaner services in NYC, we
+                  specialize resolving all types of issues including pet stains,
+                  pet odors, urine stains, food stains, wine stains and more!
+                </p>
+                <a href="#" class="slider-container-card-detail-learnmore"
+                  >Learn More Carpet Cleaning</a
+                >
+              </div>
             </div>
-          </div>
-          <div class="slider-container-card">
-            <!-- img -->
-            <div class="slider-container-card-image">
-              <img
-                class="lazy"
-                alt="Baby sitting on clean carpet. "
-                title="Carpet-Cleaning-Baby-on-Carpet"
-                src="https://pristinegreencleaning.com/assets/images/service/carpet-cleaner-nyc.webp"
-                style
-              />
+            <div class="slider-container-card">
+              <!-- img -->
+              <div class="slider-container-card-image">
+                <img
+                  class="lazy"
+                  alt="Baby sitting on clean carpet. "
+                  title="Carpet-Cleaning-Baby-on-Carpet"
+                  src="https://pristinegreencleaning.com/assets/images/service/carpet-cleaner-nyc.webp"
+                  style
+                />
+              </div>
+              <!-- card details -->
+              <div class="slider-container-card-detail flex flex-col">
+                <p>Cartpet Cleaning</p>
+                <p>
+                  As one of the top carpet cleaner services in NYC, we
+                  specialize resolving all types of issues including pet stains,
+                  pet odors, urine stains, food stains, wine stains and more!
+                </p>
+                <a href="#" class="slider-container-card-detail-learnmore"
+                  >Learn More Carpet Cleaning</a
+                >
+              </div>
             </div>
-            <!-- card details -->
-            <div class="slider-container-card-detail flex flex-col">
-              <p>Cartpet Cleaning</p>
-              <p>
-                As one of the top carpet cleaner services in NYC, we specialize
-                resolving all types of issues including pet stains, pet odors,
-                urine stains, food stains, wine stains and more!
-              </p>
-              <a href="#" class="slider-container-card-detail-learnmore"
-                >Learn More Carpet Cleaning</a
-              >
+            <div class="slider-container-card">
+              <!-- img -->
+              <div class="slider-container-card-image">
+                <img
+                  class="lazy"
+                  alt="Baby sitting on clean carpet. "
+                  title="Carpet-Cleaning-Baby-on-Carpet"
+                  src="https://pristinegreencleaning.com/assets/images/service/carpet-cleaner-nyc.webp"
+                  style
+                />
+              </div>
+              <!-- card details -->
+              <div class="slider-container-card-detail flex flex-col">
+                <p>Cartpet Cleaning</p>
+                <p>
+                  As one of the top carpet cleaner services in NYC, we
+                  specialize resolving all types of issues including pet stains,
+                  pet odors, urine stains, food stains, wine stains and more!
+                </p>
+                <a href="#" class="slider-container-card-detail-learnmore"
+                  >Learn More Carpet Cleaning</a
+                >
+              </div>
             </div>
-          </div>
-          <div class="slider-container-card">
-            <!-- img -->
-            <div class="slider-container-card-image">
-              <img
-                class="lazy"
-                alt="Baby sitting on clean carpet. "
-                title="Carpet-Cleaning-Baby-on-Carpet"
-                src="https://pristinegreencleaning.com/assets/images/service/carpet-cleaner-nyc.webp"
-                style
-              />
+            <div class="slider-container-card">
+              <!-- img -->
+              <div class="slider-container-card-image">
+                <img
+                  class="lazy"
+                  alt="Baby sitting on clean carpet. "
+                  title="Carpet-Cleaning-Baby-on-Carpet"
+                  src="https://pristinegreencleaning.com/assets/images/service/carpet-cleaner-nyc.webp"
+                  style
+                />
+              </div>
+              <!-- card details -->
+              <div class="slider-container-card-detail flex flex-col">
+                <p>Cartpet Cleaning</p>
+                <p>
+                  As one of the top carpet cleaner services in NYC, we
+                  specialize resolving all types of issues including pet stains,
+                  pet odors, urine stains, food stains, wine stains and more!
+                </p>
+                <a href="#" class="slider-container-card-detail-learnmore"
+                  >Learn More Carpet Cleaning</a
+                >
+              </div>
             </div>
-            <!-- card details -->
-            <div class="slider-container-card-detail flex flex-col">
-              <p>Cartpet Cleaning</p>
-              <p>
-                As one of the top carpet cleaner services in NYC, we specialize
-                resolving all types of issues including pet stains, pet odors,
-                urine stains, food stains, wine stains and more!
-              </p>
-              <a href="#" class="slider-container-card-detail-learnmore"
-                >Learn More Carpet Cleaning</a
-              >
+            <div class="slider-container-card">
+              <!-- img -->
+              <div class="slider-container-card-image">
+                <img
+                  class="lazy"
+                  alt="Baby sitting on clean carpet. "
+                  title="Carpet-Cleaning-Baby-on-Carpet"
+                  src="https://pristinegreencleaning.com/assets/images/service/carpet-cleaner-nyc.webp"
+                  style
+                />
+              </div>
+              <!-- card details -->
+              <div class="slider-container-card-detail flex flex-col">
+                <p>Cartpet Cleaning</p>
+                <p>
+                  As one of the top carpet cleaner services in NYC, we
+                  specialize resolving all types of issues including pet stains,
+                  pet odors, urine stains, food stains, wine stains and more!
+                </p>
+                <a href="#" class="slider-container-card-detail-learnmore"
+                  >Learn More Carpet Cleaning</a
+                >
+              </div>
             </div>
-          </div>
-          <div class="slider-container-card">
-            <!-- img -->
-            <div class="slider-container-card-image">
-              <img
-                class="lazy"
-                alt="Baby sitting on clean carpet. "
-                title="Carpet-Cleaning-Baby-on-Carpet"
-                src="https://pristinegreencleaning.com/assets/images/service/carpet-cleaner-nyc.webp"
-                style
-              />
+            <div class="slider-container-card">
+              <!-- img -->
+              <div class="slider-container-card-image">
+                <img
+                  class="lazy"
+                  alt="Baby sitting on clean carpet. "
+                  title="Carpet-Cleaning-Baby-on-Carpet"
+                  src="https://pristinegreencleaning.com/assets/images/service/carpet-cleaner-nyc.webp"
+                  style
+                />
+              </div>
+              <!-- card details -->
+              <div class="slider-container-card-detail flex flex-col">
+                <p>Cartpet Cleaning</p>
+                <p>
+                  As one of the top carpet cleaner services in NYC, we
+                  specialize resolving all types of issues including pet stains,
+                  pet odors, urine stains, food stains, wine stains and more!
+                </p>
+                <a href="#" class="slider-container-card-detail-learnmore"
+                  >Learn More Carpet Cleaning</a
+                >
+              </div>
             </div>
-            <!-- card details -->
-            <div class="slider-container-card-detail flex flex-col">
-              <p>Cartpet Cleaning</p>
-              <p>
-                As one of the top carpet cleaner services in NYC, we specialize
-                resolving all types of issues including pet stains, pet odors,
-                urine stains, food stains, wine stains and more!
-              </p>
-              <a href="#" class="slider-container-card-detail-learnmore"
-                >Learn More Carpet Cleaning</a
-              >
-            </div>
-          </div>
-          <div class="slider-container-card">
-            <!-- img -->
-            <div class="slider-container-card-image">
-              <img
-                class="lazy"
-                alt="Baby sitting on clean carpet. "
-                title="Carpet-Cleaning-Baby-on-Carpet"
-                src="https://pristinegreencleaning.com/assets/images/service/carpet-cleaner-nyc.webp"
-                style
-              />
-            </div>
-            <!-- card details -->
-            <div class="slider-container-card-detail flex flex-col">
-              <p>Cartpet Cleaning</p>
-              <p>
-                As one of the top carpet cleaner services in NYC, we specialize
-                resolving all types of issues including pet stains, pet odors,
-                urine stains, food stains, wine stains and more!
-              </p>
-              <a href="#" class="slider-container-card-detail-learnmore"
-                >Learn More Carpet Cleaning</a
-              >
-            </div>
-          </div>
-          <div class="slider-container-card">
-            <!-- img -->
-            <div class="slider-container-card-image">
-              <img
-                class="lazy"
-                alt="Baby sitting on clean carpet. "
-                title="Carpet-Cleaning-Baby-on-Carpet"
-                src="https://pristinegreencleaning.com/assets/images/service/carpet-cleaner-nyc.webp"
-                style
-              />
-            </div>
-            <!-- card details -->
-            <div class="slider-container-card-detail flex flex-col">
-              <p>Cartpet Cleaning</p>
-              <p>
-                As one of the top carpet cleaner services in NYC, we specialize
-                resolving all types of issues including pet stains, pet odors,
-                urine stains, food stains, wine stains and more!
-              </p>
-              <a href="#" class="slider-container-card-detail-learnmore"
-                >Learn More Carpet Cleaning</a
-              >
-            </div>
-          </div>
-          <div class="slider-container-card">
-            <!-- img -->
-            <div class="slider-container-card-image">
-              <img
-                class="lazy"
-                alt="Baby sitting on clean carpet. "
-                title="Carpet-Cleaning-Baby-on-Carpet"
-                src="https://pristinegreencleaning.com/assets/images/service/carpet-cleaner-nyc.webp"
-                style
-              />
-            </div>
-            <!-- card details -->
-            <div class="slider-container-card-detail flex flex-col">
-              <p>Cartpet Cleaning</p>
-              <p>
-                As one of the top carpet cleaner services in NYC, we specialize
-                resolving all types of issues including pet stains, pet odors,
-                urine stains, food stains, wine stains and more!
-              </p>
-              <a href="#" class="slider-container-card-detail-learnmore"
-                >Learn More Carpet Cleaning</a
-              >
-            </div>
-          </div>
-          <div class="slider-container-card">
-            <!-- img -->
-            <div class="slider-container-card-image">
-              <img
-                class="lazy"
-                alt="Baby sitting on clean carpet. "
-                title="Carpet-Cleaning-Baby-on-Carpet"
-                src="https://pristinegreencleaning.com/assets/images/service/carpet-cleaner-nyc.webp"
-                style
-              />
-            </div>
-            <!-- card details -->
-            <div class="slider-container-card-detail flex flex-col">
-              <p>Cartpet Cleaning</p>
-              <p>
-                As one of the top carpet cleaner services in NYC, we specialize
-                resolving all types of issues including pet stains, pet odors,
-                urine stains, food stains, wine stains and more!
-              </p>
-              <a href="#" class="slider-container-card-detail-learnmore"
-                >Learn More Carpet Cleaning</a
-              >
-            </div>
-          </div>
-          <div class="slider-container-card">
-            <!-- img -->
-            <div class="slider-container-card-image">
-              <img
-                class="lazy"
-                alt="Baby sitting on clean carpet. "
-                title="Carpet-Cleaning-Baby-on-Carpet"
-                src="https://pristinegreencleaning.com/assets/images/service/carpet-cleaner-nyc.webp"
-                style
-              />
-            </div>
-            <!-- card details -->
-            <div class="slider-container-card-detail flex flex-col">
-              <p>Cartpet Cleaning</p>
-              <p>
-                As one of the top carpet cleaner services in NYC, we specialize
-                resolving all types of issues including pet stains, pet odors,
-                urine stains, food stains, wine stains and more!
-              </p>
-              <a href="#" class="slider-container-card-detail-learnmore"
-                >Learn More Carpet Cleaning</a
-              >
+            <div class="slider-container-card">
+              <!-- img -->
+              <div class="slider-container-card-image">
+                <img
+                  class="lazy"
+                  alt="Baby sitting on clean carpet. "
+                  title="Carpet-Cleaning-Baby-on-Carpet"
+                  src="https://pristinegreencleaning.com/assets/images/service/carpet-cleaner-nyc.webp"
+                  style
+                />
+              </div>
+              <!-- card details -->
+              <div class="slider-container-card-detail flex flex-col">
+                <p>Cartpet Cleaning</p>
+                <p>
+                  As one of the top carpet cleaner services in NYC, we
+                  specialize resolving all types of issues including pet stains,
+                  pet odors, urine stains, food stains, wine stains and more!
+                </p>
+                <a href="#" class="slider-container-card-detail-learnmore"
+                  >Learn More Carpet Cleaning</a
+                >
+              </div>
             </div>
           </div>
         </div>

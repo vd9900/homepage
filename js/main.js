@@ -3,7 +3,7 @@ const sortDownBtn = document.getElementById("sort-down-btn");
 const togglemenuContainer = document.getElementById("toggle-menu-container");
 const cleanSericesContainer = document.getElementById("clean-serivces-expand");
 
-const sliderWrapper = document.querySelector(".slider-container-cards");
+const sliderWrapper = document.querySelector(".slider-container-warpper ");
 const sliderCards = document.querySelectorAll(".slider-container-card");
 const prevButton = document.querySelector(".prev-button");
 const nextButton = document.querySelector(".next-button");
@@ -11,7 +11,7 @@ const nextButton = document.querySelector(".next-button");
 let slideIndex = 0;
 const slideWidth = sliderCards[0].clientWidth + 30;
 const maxSlide = sliderCards.length - 1;
-
+// alert(slideWidth);
 function slide() {
   sliderWrapper.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
 }
@@ -44,6 +44,7 @@ function toggle() {
 }
 function toggleSort() {
   this.classList.toggle("fa-sort-up");
+  // this.style.transform = `scale(-1)`;
   cleanSericesContainer.classList.toggle("hidden");
 }
 
