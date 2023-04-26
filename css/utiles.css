@@ -30,13 +30,13 @@
   gap: 0.9rem;
 }
 .gap-2 {
-  gap: 1rem;
+  gap: 1em;
 }
 .gap-4 {
-  gap: 1.8rem;
+  gap: 1.8em;
 }
 .gap-6 {
-  gap: 6rem;
+  gap: 6em;
 }
 .hidden {
   display: none;
