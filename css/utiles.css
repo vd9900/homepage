@@ -17,7 +17,15 @@
 .justify-between {
   justify-content: space-between;
 }
-
+.font-1 {
+  font-size: 2.2rem;
+}
+.font-2 {
+  font-size: 1.5rem;
+}
+.font-median {
+  font-weight: 600;
+}
 .gap-1 {
   gap: 0.9rem;
 }

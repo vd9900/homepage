@@ -154,10 +154,15 @@ button {
   border-bottom: 1px solid rgb(255, 250, 250);
 }
 
-.toggle-menu > div {
+.toggle-menu div {
   color: #ffffff;
   padding: 0.8rem 2rem;
   font-size: 1.2rem;
+}
+.clean-services-links {
+  margin: 0;
+  /* background-color: red; */
+  padding: 0;
 }
 
 .clean-service-section {
@@ -245,6 +250,18 @@ a {
   color: #2baf38;
 }
 
+.review-section {
+  background-color: #4078bc;
+}
+.review-section-container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+.review-section-container > div {
+  width: 50%;
+  color: #ffffff;
+}
 /* animations */
 .slide-bottom {
   -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -322,5 +339,16 @@ a {
     text-align: center;
     align-items: center;
     justify-content: center;
+  }
+  .review-section-container {
+    padding: 0.5rem 0;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .review-section-container > div {
+    /* width: auto; */
+    flex-direction: column;
+    text-align: center;
   }
 }
