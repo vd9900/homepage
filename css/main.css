@@ -85,20 +85,27 @@ button {
 }
 
 .main-section {
-  height: 500px;
+  height: 480px;
   background-image: url(https://pristinegreencleaning.com/assets/images/ny-carpet-cleaning.jpg);
   background-repeat: no-repeat;
   /* background-position: center; */
   background-size: cover;
-  padding: 0 6rem;
 }
 .main-heading-section {
+  padding: 0 6rem;
   /* widthś: 43%; */
 }
 .heading-1 {
   color: #4078bc;
   font-family: sans-serif;
   font-size: 3.2rem;
+}
+
+.booknow-section > button {
+  transition: all ease-in-out 0.3s;
+}
+.booknow-section > button:hover {
+  transform: scale(0.98);
 }
 .heading-2 {
   font-size: 1.8rem;
@@ -378,7 +385,7 @@ a {
   width: 250px;
   outline: none;
   height: 42px;
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 0 0.8rem;
 }
 .callback-form-section-container-btn {
@@ -386,7 +393,7 @@ a {
   padding: 0 2rem;
   font-size: 1.2rem;
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: 4px;
   color: #fff;
   background-color: #4078bc;
   transition: all ease-out 0.4s;
@@ -610,6 +617,32 @@ a {
 }
 
 @media screen and (max-width: 680px) {
+  .main-heading-section {
+    width: 100%;
+    padding: 0 0rem;
+    margin: 0 auto;
+    text-align: center;
+    
+  }
+  .main-heading-section > div {
+  }
+  .heading-1 {
+    font-size: 2.2rem;
+  }
+  .heading-2 {
+    font-size: 1.2rem;
+  }
+  .booknow-section {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem ;
+    /* background: #000; */
+  }
+  .booknow-section > input,
+  button {
+    padding: 0.8rem;
+    width: 100% !important;
+  }
   .footer-1-container > div {
     width: 100% !important;
     text-align: center;
@@ -705,5 +738,9 @@ a {
   }
   .offerservice-section-list-container > ul > li > a {
     font-size: 0.9rem;
+  }
+  .callus-section-container {
+    width: 90%;
+    padding: 2rem;
   }
 }
