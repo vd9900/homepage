@@ -26,18 +26,7 @@
 .font-median {
   font-weight: 600;
 }
-.gap-1 {
-  gap: 0.9rem;
-}
-.gap-2 {
-  gap: 1em;
-}
-.gap-4 {
-  gap: 1.8em;
-}
-.gap-6 {
-  gap: 6em;
-}
+
 .hidden {
   display: none;
 }
@@ -150,4 +139,75 @@
   background-position: center;
   border-radius: 8px 0px 0px 8px;
   transform: scale(-1);
+}
+.text-skyblue {
+  color: #0092d8;
+}
+.bg-lightgray {
+  background-color: #eeee;
+}
+
+.btn-success {
+  background-color: #2baf38 !important;
+}
+
+.btn-lightgreen {
+  background-color: #82c12d !important;
+}
+.btn-lightgreen :hover {
+  background-color: #3b3b3b;
+}
+.text-green {
+  /* filter: drop-shadow(0 0 4px #e8e0e0); */
+  font-size: 3.8rem !important;
+  color: #2baf38 !important;
+}
+.bg-lightgray-1 {
+  background-color: #d2f2d7;
+}
+.bg-lightgreen {
+  background-color: #2baf38 !important;
+}
+.border-lightgreen {
+  border: 1px solid #2baf38 !important;
+}
+.text-green-1 {
+  color: #2baf38 !important;
+}
+.text-shadow {
+  text-shadow: 0 0 36px #fbfbfb;
+  -webkit-filter: drop-shadow(2px 4px 6px #fff);
+  filter: drop-shadow(2px 4px 6px #fff);
+}
+.tex-white {
+  color: #fff !important;
+}
+.text-blue {
+  color: #4873b7;
+}
+.text-lightgray {
+  color: #4e4a4a;
+}
+.main-content-section-container > h3 {
+  font-size: 2.6em !important;
+}
+.text-ellipsis-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.text-ellipsis-3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.coupons-lists > li {
+  list-style: none;
+  /* border-style: groove; */
+  /* height: auto ; */
+  border: dashed 2px #fff !important;
 }

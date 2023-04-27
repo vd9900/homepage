@@ -11,15 +11,20 @@
 :root {
   --padding: 0.5rem;
 }
-
+html,
+body {
+}
 i {
   font-size: 30px;
 }
 button {
   background-color: transparent;
 }
+a {
+  text-decoration: none !important;
+}
 
-.navbar {
+.custom-navbar {
   background-color: #ffffff;
   border-bottom: 1px #2baf38 solid;
   width: 100%;
@@ -29,11 +34,11 @@ button {
 }
 .fixed-navbar {
 }
-.container {
+.fixed-navbar-container {
   position: relative;
-  width: 85%;
-  /* padding: var(--padding); */
+  /* width: 90%; */
   margin: 0 auto;
+  /* padding: var(--padding); */
 }
 .phone-number {
   color: green;
@@ -69,12 +74,15 @@ button {
   gap: 1.5rem;
 }
 .link {
-  height: 35px;
+  height: 34px;
   padding: 0rem 0.5rem;
-  color: #0087ca;
   font-size: 0.9rem;
   cursor: pointer;
   transition: all ease-out 0.2s;
+}
+.link > * {
+  color: #0087ca;
+  text-decoration: none;
 }
 .link:hover {
   border-bottom: 4px solid #0087ca;
@@ -165,10 +173,10 @@ button {
   color: #ffffff;
   padding: 0.8rem 2rem;
   font-size: 1.2rem;
+  background-color: red !important;
 }
 .clean-services-links {
   margin: 0;
-  /* background-color: red; */
   padding: 0;
 }
 
@@ -206,21 +214,21 @@ button {
   /* text-decoration: none; */
   /* color: #ffffff; */
 }
-.cleaning-services-hover-sections,
-p {
+.cleaning-services-hover-sections > p {
   padding: 0.8rem 0 0.8rem 1.2rem;
 }
 
 .cleaning-services-hover-section p > a {
   font-size: 0.9rem;
-  /* text-decoration: none; */
-  /* color: #ffffff; */
+  text-decoration: none;
+  color: #ffffff;
 }
 .cleaning-services-hover-section p > a:hover {
   color: #ffc122;
   text-decoration: underline;
 }
 .clean-link {
+  /* position: relative; */
 }
 .clean-link:hover .clean-serivces-hover {
   display: flex !important;
@@ -485,10 +493,21 @@ a {
   margin: auto;
 }
 
+.service-area-links > div > a {
+  color: #4e4a4a;
+}
+.service-area-links > div :hover {
+  color: #2baf38 !important;
+}
+
 /* animations */
 .slide-bottom {
   -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.carpet-container {
+  background-image: url();
 }
 
 /**
@@ -607,7 +626,6 @@ a {
   .companyinfo-section-container {
     width: 100%;
     padding: 1rem 0;
-    text-align: start;
   }
   .companyinfo-section-container-title {
     width: 100%;
@@ -622,7 +640,6 @@ a {
     padding: 0 0rem;
     margin: 0 auto;
     text-align: center;
-    
   }
   .main-heading-section > div {
   }
@@ -635,7 +652,7 @@ a {
   .booknow-section {
     flex-direction: column;
     gap: 2rem;
-    padding: 0 2rem ;
+    padding: 0 2rem;
     /* background: #000; */
   }
   .booknow-section > input,
