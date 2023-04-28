@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/utiles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/b6e54b3865.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="custom-navbar">
+      <div class="fixed-navbar w-100 px-2 px-md-5">
+        <div class="fixed-navbar-container flex flex-col">
+          <!-- logo & phone -->
+          <div class="navbar-section-1">
+            <!-- Logo section -->
+            <div class="">
+              <!-- logo img -->
+              <span>
+                <img
+                  class="main-logo lazy"
+                  alt="PrisineGreen"
+                  height="60"
+                  width="270"
+                  src="https://pristinegreencleaning.com/assets/logo/PGUpholsteryAndCarpetCleaning.png"
+                  style
+                />
+              </span>
+            </div>
+            <!-- phone-section -->
+            <div class="navbar-phone_section flex">
+              <div class="flex item-center gap-1">
+                <img
+                  width="28"
+                  height="28"
+                  alt="call-us"
+                  class="lazy"
+                  src="https://pristinegreencleaning.com/assets/icons/call.png"
+                  style
+                />
+                <a
+                  class="myphone"
+                  href="tel:347-871-6530"
+                  style="color: #76d381; font-size: 28px !important"
+                >
+                  347-871-6530
+                </a>
+              </div>
+              <!-- toggloe for small device -->
+              <div class="hidden toggle-menu-btn">
+                <button id="breadcrump-btn" class="curoser-pointer">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-section-2">
+            <!-- Links -->
+            <ul class="nav-links flex">
+              <li class="link clean-link">
+                <span>
+                  <a class="" href="/carpet.html"> Cleaning Services </a>
+                </span>
+                <!-- show on hover (cleaning services ) -->
+                <div class="clean-serivces-hover flex flex-col justify-center">
+                  <div class="flex justify-between">
+                    <div>
+                      <h2>Cleaning Services</h2>
+                      <div
+                        class="flex cleaning-services-hover-sections justify-between"
+                      >
+                        <div
+                          class="flex flex-col cleaning-services-hover-section"
+                        >
+                          <p class="">
+                            <a href="#">Carpet Cleaning</a>
+                          </p>
+                          <p>
+                            <a href="#">Upholstery Cleaning</a>
+                          </p>
+                          <p>
+                            <a href="#">Area Rug Cleaning</a>
+                          </p>
+                          <p>
+                            <a href="#">Matterss Cleaning</a>
+                          </p>
+                          <p>
+                            <a href="#">Oriental Rug Cleaning</a>
+                          </p>
+                        </div>
+                        <div class="cleaning-services-hover-section">
+                          <p>
+                            <a href="#">Green Cleaning</a>
+                          </p>
+                          <p>
+                            <a href="#">Commerical Cleaning</a>
+                          </p>
+                          <p>
+                            <a href="#">Couch Cleaning</a>
+                          </p>
+                          <p>
+                            <a href="#">Auto Interior Cleaning</a>
+                          </p>
+                          <p>
+                            <a href="#">Pet Stains And Odors Cleaning</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- img section -->
+                    <div>
+                      <img
+                        class="ddr-image img img-fluid"
+                        src="https://pristinegreencleaning.com/assets/icons/Carpet-Upholstery-Cleaning-Google-Yelp-Rating.png"
+                        alt="Carpet Upholstery Cleaning Google Yelp Rating"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="link">
+                <a href="/request_qutoe.html"> Request a Quote </a>
+              </li>
+              <li class="link">
+                <a href="/index_service.html"> Service Areas </a>
+              </li>
+              <li class="link">
+                <a href="#"> Gallery </a>
+              </li>
+              <li class="link">
+                <a href="/contact.html"> Contact Us </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Toggle menu section (only small devices) -->
+    <div id="toggle-menu-container" class="toggle-menu hidden">
+      <!-- options -->
+      <div class="flex justify-between item-center">
+        <span> Cleaning Services </span>
+        <button
+          class="toggle-menu-contianer-sortBtn flex item-center justify-center"
+        >
+          <i
+            class="fa-solid fa-sort-down curoser-pointer"
+            id="sort-down-btn"
+          ></i>
+        </button>
+      </div>
+      <!-- expand cleaning services -->
+      <div id="clean-serivces-expand" class="clean-service-section hidden">
+        <div>Carpet Cleaning</div>
+        <div>Upholstery Cleaning</div>
+        <div>Area Rug Cleaning</div>
+        <div>Matterss Cleaning</div>
+        <div>Oriental Rug Cleaning</div>
+        <div>Green Cleaning</div>
+        <div>Commerical Cleaning</div>
+        <div>Couch Cleaning</div>
+        <div>Auto Interior Cleaning</div>
+        <div>Pet Stains And Odors Cleaning</div>
+      </div>
+      <div>Request a Quote</div>
+      <div>Service Areas</div>
+      <div>Gallery</div>
+      <div>Conatct Us</div>
+      <div class="clean-services-links">
+        <div class="">
+          <p>Our socials</p>
+          <!-- social links -->
+          <div class="">
+            <a
+              href="https://www.facebook.com/PristineGreen-Upholstery-and-Carpet-Cleaning-380402999024630/?__tn__=%2Cg/"
+              target="_blank"
+              rel="noreferrer"
+              ><img
+                rel="canonical"
+                class="lazy"
+                alt="facebook"
+                width="32px"
+                height="32px"
+                src="https://pristinegreencleaning.com/assets/images/5365678_fb_facebook_facebook logo_icon.png"
+                style
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/PristineGreen-Upholstery-and-Carpet-Cleaning-380402999024630/?__tn__=%2Cg/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                rel="canonical"
+                class="lazy"
+                alt="twitter"
+                width="32px"
+                height="32px"
+                src="https://pristinegreencleaning.com/assets/images/5296516_tweet_twitter_twitter logo_icon.svg"
+                style
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/PristineGreen-Upholstery-and-Carpet-Cleaning-380402999024630/?__tn__=%2Cg/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                rel="canonical"
+                class="lazy"
+                alt="instagram"
+                width="32px"
+                height="32px"
+                src="https://pristinegreencleaning.com/assets/images/5296765_camera_instagram_instagram logo_icon.webp"
+                style
+              />
+            </a>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- get a qutoe section -->
+    <section class="position-relative">
+      <!-- bg-img -->
+      <img
+        class="img lazy"
+        src="https://pristinegreencleaning.com/assets/images/carpet-cleaner-service-free-quote.webp"
+        data-src="https://pristinegreencleaning.com/assets/images/carpet-cleaner-nyc-banner.webp"
+        width="100%"
+        height="590"
+        style="height: 560px !important"
+      />
+      <div
+        class="py-4 px-3 p-md-4 px-lg-5 position-absolute bottom-0 w-100 h-100 d-flex item-center justify-center"
+      >
+        <div
+          class="d-flex flex-col gap-4 rounded-3 h-100 py-4 bg-black col-12 col-sm-10 coupons-container"
+          style="--bs-bg-opacity: 0.5"
+        >
+          <div class="mx-auto w-100">
+            <p class="text-center text-white fs-1 p-0">
+              Carpet Cleaning Coupons
+            </p>
+            <p class="tex-white px-1 py-0 fs-6 text-center">
+              NYC's most trusted and recommended carpet cleaming service!
+            </p>
+            <!-- coupons lists -->
+            <ul
+              class="row flex w-100 coupons-lists tex-white gap-4 flex-grow justify-content-center"
+            >
+              <li class="col-md-auto p-3">
+                <h4>FREE Carpet Deodorizing</h4>
+                <p>With Carpet Cleaning 2 rooms or 250 sq ft.</p>
+              </li>
+              <li class="col-md-auto p-3 text-center">
+                <h4>15% OFF</h4>
+                <p>Carpet Cleaning minimum of 2000 sq. ft.</p>
+              </li>
+              <li class="col-md-auto p-3 text-center">
+                <h4>FREE</h4>
+                <p>1 Room Clean With 4 Rooms Cleaning $99 minimum order</p>
+              </li>
+              <li class="col-md-auto p-3 text-center">
+                <h4>20% OFF</h4>
+                <p>
+                  Commercial Cleaning Carpet, Rug, Upholstery $180 minimum order
+                </p>
+              </li>
+              <li class="col-md-auto p-3 text-center">
+                <h4>10% OFF</h4>
+                <p>Upholstery Cleaning $85 minimum order</p>
+              </li>
+              <li class="col-md-auto p-3 text-center">
+                <h4>15% OFF</h4>
+                <p>Pet Odor Control</p>
+              </li>
+              <li class="col-md-auto p-3 text-center">
+                <h4>15% OFF</h4>
+                <p>Mold & Mildew Treatment $200 minimum order</p>
+              </li>
+              <li class="col-md-auto p-3 text-center">
+                <h4>10% OFF</h4>
+                <p>Area & Oriental Rug Cleaning $85 minimum order</p>
+              </li>
+              <li class="col-md-auto p-3 text-center">
+                <h4>15% OFF</h4>
+                <p>Tile & Grout Cleaning $200 minimum order</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <!-- section 1 -->
+      <div class="footer-1">
+        <div class="footer-1-container flex justify-between gap-2">
+          <div class="footer-1-container__imgs flex flex-col">
+            <div class="flex gap-1">
+              <a href="#">
+                <img
+                  rel="canonical"
+                  class="lazy"
+                  alt="twitter"
+                  width="32px"
+                  height="32px"
+                  src="https://pristinegreencleaning.com/assets/images/5296516_tweet_twitter_twitter logo_icon.svg"
+                  style
+                />
+              </a>
+              <a href="#">
+                <img
+                  rel="canonical"
+                  class="lazy"
+                  alt="facebook"
+                  width="32px"
+                  height="32px"
+                  src="https://pristinegreencleaning.com/assets/images/5365678_fb_facebook_facebook logo_icon.png"
+                  style
+                />
+              </a>
+              <a href="#">
+                <img
+                  rel="canonical"
+                  class="lazy"
+                  alt="instagram"
+                  width="32px"
+                  height="32px"
+                  src="https://pristinegreencleaning.com/assets/images/5296765_camera_instagram_instagram logo_icon.webp"
+                  style
+                />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img
+                  rel="canonical"
+                  class="trade-logo lazy"
+                  alt="paypal payments"
+                  width="180"
+                  height="180"
+                  src="https://pristinegreencleaning.com/assets/images/Paypal.webp"
+                  style
+                />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img
+                  rel="canonical"
+                  class="trade-logo lazy"
+                  alt="paypal payments"
+                  width="186"
+                  height="156"
+                  src="https://pristinegreencleaning.com/assets/images/Venmo-Payment.webp"
+                  style
+                />
+              </a>
+            </div>
+            <div>
+              <img
+                rel="canonical"
+                class="trade-logo lazy"
+                alt="Payments"
+                width="200"
+                height="30"
+                src="https://pristinegreencleaning.com/assets/images/secure-stripe-payment-logo.png"
+                style
+              />
+            </div>
+            <div>
+              <img
+                rel="canonical"
+                class="logo-white lazy"
+                alt="PristineGreenCleaning"
+                width="256"
+                height="57"
+                src="https://pristinegreencleaning.com/assets/logo/CarpetAndUpholsteryCleaning_256x57.png"
+                style
+              />
+            </div>
+          </div>
+          <div class="footer-1-container__Service">
+            <p class="footer-heading">SERIVCE AREAS</p>
+            <ul class="footer-1-container__Service-links flex flex-col gap-1">
+              <li>
+                <a href="#">Astoria</a>
+              </li>
+              <li>
+                <a href="#">East Village</a>
+              </li>
+              <li>
+                <a href="#">Gramercy Park</a>
+              </li>
+              <li>
+                <a href="#">Lower East Side</a>
+              </li>
+              <li>
+                <a href="#">Maspeth </a>
+              </li>
+              <li>
+                <a href="#">Midtown </a>
+              </li>
+              <li>
+                <a href="#">Park Slope</a>
+              </li>
+              <li>
+                <a href="#">Prospect Park South</a>
+              </li>
+              <li>
+                <a href="#">Queens Village </a>
+              </li>
+              <li>
+                <a href="#">Union Square </a>
+              </li>
+              <li>
+                <a href="#">Upper West Side </a>
+              </li>
+              <li>
+                <a href="#">Union Square </a>
+              </li>
+              <li>
+                <a href="#">Woodside </a>
+              </li>
+              <li>
+                <a href="#">Woodhaven</a>
+              </li>
+              <li>
+                <a href="#">View More Areas</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-1-container__Service">
+            <p class="footer-heading">OUR LINKS</p>
+            <ul class="footer-1-container__Service-links flex flex-col gap-1">
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Carpet Cleaning</a>
+              </li>
+              <li>
+                <a href="#">Upholstery Cleaning</a>
+              </li>
+              <li>
+                <a href="#">Area Rug Cleaning</a>
+              </li>
+              <li>
+                <a href="#">Commercial Cleaning</a>
+              </li>
+              <li>
+                <a href="#">Couch Cleaning </a>
+              </li>
+              <li>
+                <a href="#">Green Cleaning</a>
+              </li>
+              <li>
+                <a href="#">Mattress Cleaning</a>
+              </li>
+              <li>
+                <a href="/faq.html">FAQ’s </a>
+              </li>
+              <li>
+                <a href="coupon.html">Coupon </a>
+              </li>
+              <li>
+                <a href="/blog.html">Blog </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-1-container__Service">
+            <p class="footer-heading">GET IN TOUCH</p>
+            <ul class="footer-1-container__Service-links flex flex-col gap-1">
+              <li>
+                <a href="#">PristineGreen Upholstery and Carpet Cleaning</a>
+              </li>
+              <li>
+                <a href="#">115 E 23rd St 3rd floor</a>
+              </li>
+              <li>
+                <a href="#">New York, NY 10010</a>
+              </li>
+              <li>
+                <a href="#">347-871-6530</a>
+              </li>
+              <li>
+                <a href="#">Maps & Directions </a>
+              </li>
+              <br />
+              <li>
+                <a href="#">PristineGreen Upholstery and Carpet Cleaning </a>
+              </li>
+              <li>
+                <a href="#">265 E 78th St #6E, </a>
+              </li>
+              <li>
+                <a href="#">New York, NY 10075</a>
+              </li>
+              <li>
+                <a href="#">917-727-0936 </a>
+              </li>
+              <li>
+                <a href="#">Maps & Directions </a>
+              </li>
+              <br />
+              <li>
+                <a href="#">PristineGreen Upholstery and Carpet Cleaning </a>
+              </li>
+              <li>
+                <a href="#">6705 Myrtle Ave #1015 </a>
+              </li>
+              <li>
+                <a href="#">Queens, NY 11385</a>
+              </li>
+              <li>
+                <a href="#">347-871-6530</a>
+              </li>
+              <li>
+                <a href="#">Maps & Directions</a>
+              </li>
+              <br />
+              <li>
+                <a href="#">PristineGreen Upholstery and Carpet Cleaning </a>
+              </li>
+              <li>
+                <a href="#">3811 Ditmars Blvd #1068 </a>
+              </li>
+              <li>
+                <a href="#">Queens, NY 11105</a>
+              </li>
+              <li>
+                <a href="#">347-871-6530</a>
+              </li>
+              <li>
+                <a href="#">Maps & Directions</a>
+              </li>
+              <br />
+              <li>
+                <a href="#">sales@pristinegreencleaning.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-2 flex flex-col">
+        <div class="footer-2-links">
+          <a href="#">Privacy Policy</a> |
+          <a href="#">Sitemap</a>
+        </div>
+        <div class="footer-2-copyright">
+          <span>© 2023 PristineGreen Cleaning, LLC. All rights reserved.</span>
+        </div>
+      </div>
+      <!-- section 2 -->
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
