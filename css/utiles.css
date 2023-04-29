@@ -39,6 +39,16 @@
   font-size: 1.4rem;
   padding: 0.7rem 0.7rem 0.7rem 0;
   border-bottom: 2px solid tomato;
+  position: relative;
+}
+.footer-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  height: 8px;
+  width: 2px;
+  background-color: tomato;
 }
 
 .footer-1-container {
@@ -55,7 +65,7 @@
   text-decoration: none;
   color: #fff;
 }
-.footer-1-container__Service-links > li :hover {
+.footer-1-container__Service-links > li > a:hover {
   color: #2baf38;
   /* padding: 100px; */
 }
@@ -227,6 +237,36 @@
   /* height: auto ; */
   border: dashed 2px #fff !important;
 }
+.featured-post-lists > li {
+  display: flex !important;
+}
 .coupons-lists > li > p {
   margin: 0 !important;
+}
+.featured-post-lists > li {
+  list-style: none;
+}
+.featured-post-lists > li > div {
+  display: flex;
+  gap: 0.5rem;
+  /* background-color: #000; */
+}
+
+.lptw-header-link {
+  color: #000 !important;
+  font-size: 1rem !important;
+  display: block;
+  font-weight: 600;
+}
+.custom-pagination > li > a {
+  color: #000;
+  border-radius: 50%;
+}
+.custom-pagination > li :focus {
+  outline: none !important;
+  box-shadow: none;
+}
+.active {
+  background-color: #4873b7 !important;
+  color: #fff !important;
 }
