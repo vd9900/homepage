@@ -267,17 +267,31 @@
   box-shadow: none;
 }
 .active {
-  background-color: #4873b7 !important;
+  background-color: #2baf38 !important;
   color: #fff !important;
+}
+.tab-pane {
+  background-color: transparent !important;
+  color: #4e4a4a !important;
+}
+
+/* baby  section */
+
+.baby-section {
+  background-image: url("https://pristinegreencleaning.com/assets/images/baby-carpet-cleaning (1).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 /* Animations */
 .phone-vibrate {
   animation: vibrate 0.5s infinite;
 }
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 420px) {
   .phone-vibrate {
-    height: 300px;
+    /* height: 300px; */
   }
 }
 

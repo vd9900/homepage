@@ -7,15 +7,21 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/utiles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
     <script
       src="https://kit.fontawesome.com/b6e54b3865.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="fixed-navbar">
-        <div class="container flex flex-col">
+    <nav class="custom-navbar hidden">
+      <div class="fixed-navbar w-100 px-2 px-md-5">
+        <div class="fixed-navbar-container flex flex-col">
           <!-- logo & phone -->
           <div class="navbar-section-1">
             <!-- Logo section -->
@@ -63,7 +69,7 @@
             <!-- Links -->
             <ul class="nav-links flex">
               <li class="link clean-link">
-                <span> <a href="#"> Cleaning Services </a> </span>
+                <span> Cleaning Services </span>
                 <!-- show on hover (cleaning services ) -->
                 <div class="clean-serivces-hover flex flex-col justify-center">
                   <div class="flex justify-between">
@@ -76,7 +82,7 @@
                           class="flex flex-col cleaning-services-hover-section"
                         >
                           <p class="">
-                            <a href="/carpet.html">Carpet Cleaning</a>
+                            <a href="#">Carpet Cleaning</a>
                           </p>
                           <p>
                             <a href="#">Upholstery Cleaning</a>
@@ -224,6 +230,7 @@
       </div>
     </div>
 
+    <!-- main section -->
     <main class="main-section item-center flex">
       <div class="main-heading-section">
         <!-- heading section -->
@@ -242,6 +249,8 @@
         </div>
       </div>
     </main>
+
+    <!-- review banner section  -->
     <section class="review-section flex flex-col">
       <div class="review-section-container flex item-center justify-center">
         <div class="flex justify-center item-center">
@@ -261,7 +270,8 @@
         </div>
       </div>
     </section>
-    <!-- feature section -->
+
+    <!-- featured banner section-->
 
     <section class="feature-section">
       <div class="feature-section-container">
@@ -284,6 +294,8 @@
         </div>
       </div>
     </section>
+
+    <!-- slider section -->
 
     <!-- Slider -->
     <section class="slider-section">
@@ -544,9 +556,7 @@
 
     <!-- Services section -->
     <section class="services-section">
-      <div
-        class="services-section-container flex flex-col justify-center item-center"
-      >
+      <div class="py-5 p-md-3 p-xl-5 flex flex-col justify-center item-center">
         <!-- services section header -->
         <div class="services-section-header">
           <p>PRISTINEGREEN CLEANING</p>
@@ -557,66 +567,140 @@
           <p>Offering Both Commercial & Residential Carpet Cleaning Services</p>
         </div>
         <!-- section accordion & image -->
-        <div class="services-section-accordion flex justify-center">
+        <div
+          class="container row justify-content-center align-items-center py-4 overflow-hidden gap-4"
+        >
           <!-- accordion -->
-          <div class="services-section-accordion-container flex flex-col">
-            <div class="services-section-accordion-containers">
-              <div class="services-section-accordion-header">
-                <span>What services do you provide?</span>
-                <button>
-                  <i class="fa-sharp fa-solid fa-chevron-down"></i>
-                </button>
+          <div
+            class="services-section-accordion-container flex flex-col col-12 col-lg-5 col-xl-4"
+          >
+            <div class="accordion flex flex-column gap-3" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button services-section-accordion-header"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    What services do you provide?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      We provide a variety of upholstery and carpet cleaner
+                      services in NYC including sofa cleaning, area rug
+                      cleaning, oriental rug cleaning, traditional rug cleaning,
+                      mattress cleaning, couch cleaning, armchair cleaning,
+                      furniture cleaning and more.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="services-section-accordion-content">
-                <p>
-                  We provide a variety of upholstery and carpet cleaner services
-                  in NYC including sofa cleaning, area rug cleaning, oriental
-                  rug cleaning, traditional rug cleaning, mattress cleaning,
-                  couch cleaning, armchair cleaning, furniture cleaning and
-                  more.
-                </p>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button services-section-accordion-header collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Where do you service?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      We provide our carpet cleaner services to the NYC boroughs
+                      and surrouding rea. These areas include Brooklyn, Queens,
+                      Manhattan, Staten Island, New Jersey, Long Island, and
+                      more
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="services-section-accordion-containers">
-              <div class="services-section-accordion-header">
-                <span>What services do you provide?</span>
-                <button>
-                  <i class="fa-sharp fa-solid fa-chevron-down"></i>
-                </button>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button services-section-accordion-header collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    How is your cleaning different?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      What sets us apart from other NYC carpet cleaning
+                      companies is that we only use green and non-toxic products
+                      in our upholstery and carpet cleaning services. These
+                      products have been certified by the US EPA as part of
+                      their "Safer Choice" program. We also offer incredible
+                      service, hence our average 4.9/5 star rating at all of our
+                      locations!
+                    </p>
+                  </div>
+                </div>
               </div>
-
-              <div class="services-section-accordion-content hidden">
-                <p></p>
-              </div>
-            </div>
-            <div class="services-section-accordion-containers">
-              <div class="services-section-accordion-header">
-                <span>What services do you provide?</span>
-                <button>
-                  <i class="fa-sharp fa-solid fa-chevron-down"></i>
-                </button>
-              </div>
-              <div class="services-section-accordion-content hidden">
-                <p></p>
-              </div>
-            </div>
-            <div class="services-section-accordion-containers">
-              <div class="services-section-accordion-header">
-                <span>What services do you provide?</span>
-                <button>
-                  <i class="fa-sharp fa-solid fa-chevron-down"></i>
-                </button>
-              </div>
-              <div class="services-section-accordion-content hidden">
-                <p></p>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button services-section-accordion-header collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Why choose us?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      If you are looking for a trusted and recommended BYC
+                      carpet cleaning company that not only provides incredible
+                      service but also uses top=of-the-line green products that
+                      are safe for you, your family, and your pets, then we are
+                      the right choice! You can't get better than PristineGreen!
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+
           <!-- img -->
-          <div class="service-section-img hidden">
+          <div class="service-section-img col">
             <img
               src="https://pristinegreencleaning.com/assets/images/after-clean.jpg"
               alt=""
+              style="max-width: 100%"
             />
           </div>
         </div>
@@ -643,6 +727,115 @@
             class="callback-form-section-container-input"
           />
           <button class="callback-form-section-container-btn">Request</button>
+        </div>
+      </div>
+    </section>
+
+    <!--  baby section -->
+    <section class="baby-section">
+      <!-- tabs -->
+      <div
+        class="container-fluid d-flex flex-column py-5 p-md-5 justify-content-center h-100"
+      >
+        <div
+          style="max-height: 100%"
+          class="bg-lightgray h-auto col-12 col-sm-10 col-md-8 col-xl-7 p-3 p-md-5 rounded-5"
+        >
+          <div
+            style="width: fit-content !important"
+            class="nav nav-tabs border mb-3 w-auto rounded-3 overflow-hidden"
+            id="nav-tab"
+            role="tablist"
+          >
+            <button
+              class="nav-link rounded-0 active"
+              id="nav-home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-home"
+              type="button"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
+            >
+              Carpet and Upholstery Cleaning Services
+            </button>
+            <button
+              class="nav-link rounded-0"
+              id="nav-profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-profile"
+              type="button"
+              role="tab"
+              aria-controls="nav-profile"
+              aria-selected="false"
+            >
+              Paris
+            </button>
+            <button
+              class="nav-link rounded-0"
+              id="nav-contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-contact"
+              type="button"
+              role="tab"
+              aria-controls="nav-contact"
+              aria-selected="false"
+            >
+              Tokyo
+            </button>
+          </div>
+          <div style="max-width: 100%" class="tab-content" id="nav-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="nav-home"
+              role="tabpanel"
+              aria-labelledby="nav-home-tab"
+            >
+              <h3 class="text-blue">Carpet and Upholstery Cleaning Services</h3>
+              <p>
+                We love our furniture, whether it’s our couches, carpets,
+                mattresses, or even the interior of our cars. But life happens
+                and spills, dirt, and grime build up over time. Sometimes its
+                even quicker if we have little children and toddlers we take
+                care of! It may even be your office space where the office
+                chairs and wall to wall carpet needs a freshen for your
+                employees or customers. Whatever the issue, our team of
+                professional cleaners have the tools and expertise to clean up
+                all types of stains from pet stains, pesky odors, food stains,
+                juice and milk stains and more! Don’t try to do it yourself!
+                Often cleaning up a stain with household items are
+                non-professional chemicals can leave permeant marks. We often
+                get called to clean up after the DIY attempt and the harsh soaps
+                and cleaning methods have already left unreversible damage.
+                People often forget to call carpet cleaning services and
+                upholstery cleaning services when an accident happens or
+                regularly for required maintenance. Don’t wait too long as dirt,
+                stains, and bacteria can travel deeper into the fabrics and
+                become permanent! Our carpet shampooing and upholstery steam
+                cleaning services, when done within the proper amount of time,
+                transform your furniture from drab dirty to shining, clean, and
+                sanitary! Click here to get a quote!.
+              </p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-profile"
+              role="tabpanel"
+              aria-labelledby="nav-profile-tab"
+            >
+              <h3 class="text-blue">Paris</h3>
+              <p>Paris is the capital of France</p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-contact"
+              role="tabpanel"
+              aria-labelledby="nav-contact-tab"
+            >
+              <h3 class="text-blue">Tokyo</h3>
+              <p>Tokyo is the capital of Japan.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -791,7 +984,7 @@
     </section>
     <!-- Company info section -->
     <section class="companyinfo-section">
-      <div class="companyinfo-section-container">
+      <div class="companyinfo-section-container container">
         <h2 class="companyinfo-section-container-title">
           Rated 5-Stars Carpet and Upholstery Cleaning in NYC, Brooklyn, &
           Queens
@@ -843,7 +1036,7 @@
       <div class="footer-1">
         <div class="footer-1-container flex justify-between gap-2">
           <div class="footer-1-container__imgs flex flex-col">
-            <div class="flex gap-1">
+            <div class="flex gap-4">
               <a href="#">
                 <img
                   rel="canonical"
@@ -1011,7 +1204,7 @@
                 <a href="coupon.html">Coupon </a>
               </li>
               <li>
-                <a href="/index_blog.html">Coupon </a>
+                <a href="/blog.html">Coupon </a>
               </li>
             </ul>
           </div>
@@ -1019,13 +1212,13 @@
             <p class="footer-heading">GET IN TOUCH</p>
             <ul class="footer-1-container__Service-links flex flex-col gap-1">
               <li>
-                <a href="#">PristineGreen Upholstery and Carpet Cleaning</a>
+                <span>PristineGreen Upholstery and Carpet Cleaning</span>
               </li>
               <li>
-                <a href="#">115 E 23rd St 3rd floor</a>
+                <span>115 E 23rd St 3rd floor</span>
               </li>
               <li>
-                <a href="#">New York, NY 10010</a>
+                <span>New York, NY 10010</span>
               </li>
               <li>
                 <a href="#">347-871-6530</a>
@@ -1035,13 +1228,13 @@
               </li>
               <br />
               <li>
-                <a href="#">PristineGreen Upholstery and Carpet Cleaning </a>
+                <span>PristineGreen Upholstery and Carpet Cleaning </span>
               </li>
               <li>
-                <a href="#">265 E 78th St #6E, </a>
+                <span>265 E 78th St #6E, </span>
               </li>
               <li>
-                <a href="#">New York, NY 10075</a>
+                <span>New York, NY 10075</span>
               </li>
               <li>
                 <a href="#">917-727-0936 </a>
@@ -1051,13 +1244,13 @@
               </li>
               <br />
               <li>
-                <a href="#">PristineGreen Upholstery and Carpet Cleaning </a>
+                <span>PristineGreen Upholstery and Carpet Cleaning </span>
               </li>
               <li>
-                <a href="#">6705 Myrtle Ave #1015 </a>
+                <span>6705 Myrtle Ave #1015 </span>
               </li>
               <li>
-                <a href="#">Queens, NY 11385</a>
+                <span>Queens, NY 11385</span>
               </li>
               <li>
                 <a href="#">347-871-6530</a>
@@ -1067,13 +1260,13 @@
               </li>
               <br />
               <li>
-                <a href="#">PristineGreen Upholstery and Carpet Cleaning </a>
+                <span>PristineGreen Upholstery and Carpet Cleaning </span>
               </li>
               <li>
-                <a href="#">3811 Ditmars Blvd #1068 </a>
+                <span>3811 Ditmars Blvd #1068 </span>
               </li>
               <li>
-                <a href="#">Queens, NY 11105</a>
+                <span>Queens, NY 11105</span>
               </li>
               <li>
                 <a href="#">347-871-6530</a>
@@ -1100,6 +1293,11 @@
       </div>
       <!-- section 2 -->
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

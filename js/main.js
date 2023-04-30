@@ -42,7 +42,6 @@ function toggle() {
   icon.classList.toggle("fa-close");
   togglemenuContainer.classList.toggle("hidden");
 }
-alert("hello");
 function toggleSort() {
   this.classList.toggle("fa-sort-up");
   // this.style.transform = `scale(-1)`;
